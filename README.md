@@ -2,7 +2,7 @@
 
 ## Description
 
-An E-Commerce backend app that uses Node.js, Sequelize, and Express.js for. This app creates an API endpoint which allows the user to create, read, update, and delete from the E-Commerce MySQL database. The database contains information about the products that the site will sell stored in related tables which were created using the ORM Sequelize.
+An E-Commerce backend app that utilizes Node.js, Sequelize, and Express.js. This app creates an API endpoint which allows the user to create, read, update, and delete from the E-Commerce MySQL database. The database contains information about the products that the site will sell. This data stored in related tables within the database which were created using the ORM Sequelize.
 
 #
 
