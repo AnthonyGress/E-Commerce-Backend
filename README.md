@@ -50,7 +50,7 @@ To use this node app, clone the repo down, use the terminal to cd into the root 
 npm start
 ```
 
-Use the terminal and the arrow/enter keys to select which options you would like to execute.
+Use the terminal and start up the server. You can then access the API endpoints througha web browser or Insomnia.
 
 ## Tests
 
