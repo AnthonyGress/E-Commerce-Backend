@@ -35,6 +35,8 @@ npm run seed
 ```
 
 ## Usage
+[!<img width="641" alt="E-Commerce YT" src="https://user-images.githubusercontent.com/70029654/127418692-d2cb1d89-3035-4297-b518-7e3b020bb243.png">](https://youtu.be/K8jG-aDC6J8)
+
 
 [Video Walkthrough](https://youtu.be/K8jG-aDC6J8)
 
