@@ -1,5 +1,9 @@
 # E-Commerce Backend [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Screenshot
+<img width="1377" alt="E-Commerce Screenshot" src="https://user-images.githubusercontent.com/70029654/127505547-27b73918-2f7d-4b35-ad5d-46e27ecb4a5a.png">
+
+
 ## Description
 
 An E-Commerce backend app that utilizes Node.js, Sequelize, and Express.js. This app creates custom API endpoints which allow the user to create, read, update, and delete from the E-Commerce MySQL database. The database contains information about the products that the site will sell. The product information is compartmentalized in related tables within the database which were created using the ORM Sequelize.
