@@ -32,7 +32,6 @@ exit
 cd..
 
 npm run seed
-
 ```
 
 ## Usage
