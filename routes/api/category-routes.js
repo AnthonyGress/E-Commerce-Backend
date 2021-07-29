@@ -35,32 +35,48 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/", (req, res) => {
+router.post("/", async (req, res) => {
   // create a new category
-  res.status(200).json({ msg: `Added new Category ${req.body.name}` });
-  return Category.create({
-    category_name: `${req.body.name}`,
-  });
+  try {
+    const create = await Category.create({
+      category_name: `${req.body.name}`,
+    });
+    res
+      .status(200)
+      .json({ msg: `Added new Category ${req.body.name}`, response: create });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", async (req, res) => {
   // TODO validate input
   // update a category by its `id` value
-  res.status(200).json({
-    msg: `Updated Category ID ${req.params.id}, It is now ${req.body.name}`,
-  });
-  return Category.update(
-    { category_name: req.body.name },
-    { where: { id: req.params.id } }
-  );
+  try {
+    const update = await Category.update(
+      { category_name: req.body.name },
+      { where: { id: req.params.id } }
+    );
+    res.status(200).json({
+      msg: `Updated Category ID ${req.params.id}, It is now ${req.body.name}`,
+      response: update,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id", async (req, res) => {
   // delete a category by its `id` value
-  res.status(200).json({
-    msg: `Destroyed Category ID ${req.params.id}`,
-  });
-  return Category.destroy({ where: { id: req.params.id } });
+  try {
+    const destroy = await Category.destroy({ where: { id: req.params.id } });
+    res.status(200).json({
+      msg: `Destroyed Category ID ${req.params.id}`,
+      response: destroy,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
