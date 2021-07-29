@@ -18,10 +18,21 @@ An E-Commerce backend app that utilizes Node.js, Sequelize, and Express.js. This
 ### Dependencies: **Requires** **_Node.js_** installed on your computer
 
 \
-To install the npm dependencies please run:
+To install the npm dependencies cd into the main directory and run:
 
 ```
 npm i
+
+cd db && mysql -u root -p
+
+source schema.sql
+
+exit
+
+cd..
+
+npm run seed
+
 ```
 
 ## Usage
